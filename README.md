@@ -1,29 +1,47 @@
-# Emotion to Poem 🌸🖋️
+Emotion to Poem 🌸🖋️
+A web app that turns your emotional text into beautiful poetry using a locally running language model (Mistral via Ollama).
 
-A web app that turns your emotional text into beautiful poetry using OpenAI GPT-4.
+🧠 Tech Stack
+Frontend: React (Vite) + TailwindCSS
 
-## 🧠 Tech Stack
-- React (Vite) + TailwindCSS
-- Node.js + Express
-- OpenAI API (GPT-4)
+Backend: Node.js + Express
 
-## 🛠️ Setup
+LLM: Ollama running the Mistral model locally
 
-### Frontend
-```bash
+🛠️ Setup Instructions
+⚙️ Prerequisites
+Node.js installed
+
+Ollama installed and running locally
+
+Pull the Mistral model using:
+
+bash
+Copy
+Edit
+ollama pull mistral
+▶️ Frontend
+bash
+Copy
+Edit
 cd client
 npm install
 npm run dev
-```
-
-### Backend
-```bash
+🧠 Backend
+bash
+Copy
+Edit
 cd server
 npm install
-touch .env    # Add your OpenAI key inside
 node index.js
-```
+📡 Ensure Ollama is running locally on http://localhost:11434.
 
-## 📦 Folder Structure
-- `client/` – React + Tailwind UI
-- `server/` – Express + OpenAI API
+📁 Folder Structure
+bash
+Copy
+Edit
+emotion-to-poem/
+│
+├── client/        # React frontend with Tailwind styling
+├── server/        # Express backend connecting to Ollama
+└── README.md
